@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matchigato – Minuman Matcha, Kopi &amp; Brown Sugar</title>
+<meta name="description" content="Pesan minuman matcha, green tea, brown sugar, kopi, milk tea, dan cokelat langsung lewat WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#beranda" class="logo" aria-label="Matchigato">
+  <img src="assets/img/icon.png" class="logo-icon" alt="">
+  Matchigato
+</a>
+  <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="#beranda">Beranda</a>
+    <a href="#menu">Menu Minuman</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="beranda">
+  <div class="hero-text">
+    <p class="hero-note">Dipesan lewat WhatsApp, dibuat saat Anda pesan</p>
+    <h1>Matcha pekat, gula aren hangat, satu gelas untuk hari Anda.</h1>
+    <p class="lead">Dari matcha latte sampai brown sugar boba. Pilih ukuran, atur gula dan es, lalu kirim pesanan dalam satu ketukan.</p>
+    <div class="hero-cta">
+      <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+      <a href="#promo" class="btn btn-ghost">Lihat Promo</a>
+    </div>
+  </div>
+  <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+</section>
+
+<section class="section" id="terlaris">
+  <div class="head"><h2>Menu Terlaris</h2><p>Gelas yang paling sering dipesan pelanggan.</p></div>
+  <div class="grid" id="bestGrid"></div>
+</section>
+
+<section class="section band" id="promo">
+  <div class="head"><h2>Promo Spesial</h2><p>Tekan tombol untuk langsung memesan promo lewat WhatsApp.</p></div>
+  <div class="promos" id="promos"></div>
+</section>
+
+<section class="section" id="menu">
+  <div class="head"><h2>Menu Minuman</h2><p>Cari atau filter berdasarkan seri, lalu atur pesanan Anda.</p></div>
+  <div class="tools">
+    <label class="search"><span class="sr">Cari minuman</span><input type="search" id="search" placeholder="Cari minuman, misalnya “latte”"></label>
+    <div class="chips" id="chips" role="group" aria-label="Filter kategori"></div>
+  </div>
+  <div class="reco">
+    <span>Bingung memilih?</span>
+    <button type="button" data-reco="matcha">Suka yang pahit-manis</button>
+    <button type="button" data-reco="brown">Suka yang manis legit</button>
+    <button type="button" data-reco="coffee">Butuh kafein</button>
+  </div>
+  <p class="count" id="count" aria-live="polite"></p>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>
+    <p>Minuman tidak ditemukan.</p>
+    <button type="button" class="btn btn-ghost" id="reset">Tampilkan semua menu</button>
+  </div>
+</section>
+
+<section class="section band" id="testimoni">
+  <div class="head"><h2>Kata Pelanggan</h2><p>Ulasan Dari Pelanggan Yang Menyukai Matchigato.</p></div>
+  <div class="quotes">
+    <figure><blockquote>Matcha-nya pekat tapi tidak pahit. Pesan lewat WhatsApp juga cepat.</blockquote><figcaption>Razalfa Siregar</figcaption></figure>
+    <figure><blockquote>Brown sugar boba-nya pas, tidak terlalu manis. Sudah beberapa kali pesan.</blockquote><figcaption>Alfan Baskoro</figcaption></figure>
+    <figure><blockquote>Bisa atur gula dan es sesuai selera, jadi tidak perlu dikoreksi lagi.</blockquote><figcaption>Prabowo Subianto</figcaption></figure>
+  </div>
+</section>
+
+<section class="section about" id="tentang">
+  <div class="head"><h2>Tentang Kami</h2></div>
+  <div class="about-body">
+    <p>Matchigato berawal dari satu pertanyaan: kenapa minuman matcha yang enak harus sulit dicari? Kami meracik setiap gelas dari bubuk matcha, bukan sirup perisa, lalu menyeimbangkannya dengan susu dan gula aren.</p>
+    <ul class="why">
+      <li><strong>Bahan jelas.</strong> Matcha bubuk, teh pilihan, kopi segar, dan gula aren asli.</li>
+      <li><strong>Rasa dijaga.</strong> Resep ditakar sama setiap hari agar rasanya konsisten.</li>
+      <li><strong>Sesuai selera.</strong> Tingkat gula dan es bisa Anda atur sendiri.</li>
+      <li><strong>Pesan tanpa ribet.</strong> Tidak perlu akun atau pembayaran online. Cukup kirim lewat WhatsApp.</li>
+    </ul>
+    <p class="hint">Teks ini contoh. Sesuaikan dengan cerita dan bahan yang benar-benar Anda pakai.</p>
+  </div>
+</section>
+
+<section class="section band" id="kontak">
+  <div class="head"><h2>Hubungi Kami</h2><p>Jika Ada Pertanyaan, Sebisa Mungkin Akan Kami Jawab.</p></div>
+  <div class="contact">
+    <dl>
+      <div><dt>WhatsApp</dt><dd><a data-wa-text></a></dd></div>
+      <div><dt>Telepon toko</dt><dd><a data-tel></a></dd></div>
+      <div><dt>Email bisnis</dt><dd><a data-mail></a></dd></div>
+      <div><dt>Alamat</dt><dd data-address></dd></div>
+      <div><dt>Jam operasional</dt><dd data-hours></dd></div>
+    </dl>
+    <div class="contact-actions">
+      <a class="btn btn-primary" data-wa target="_blank" rel="noopener">Chat WhatsApp</a>
+      <a class="btn btn-ghost" data-map target="_blank" rel="noopener">Buka Google Maps</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div>
+      <a href="assets/img/icon" class="logo"><span class="logo-mark" aria-hidden="true"></span>Matchigato</a>
+      <p>Minuman matcha, kopi, dan brown sugar yang dipesan lewat WhatsApp.</p>
+    </div>
+    <div><h3>Navigasi</h3><a href="#beranda">Beranda</a><a href="#menu">Menu Minuman</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a></div>
+    <div><h3>Kontak</h3><a data-wa-text></a><a data-mail></a><span data-address></span></div>
+    <div><h3>Jam buka</h3><span data-hours></span></div>
+  </div>
+  <p class="copy">© <span id="year"></span> Matchigato. Seluruh hak cipta dilindungi.</p>
+</footer>
+
+<a class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.6 19.6l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.600 10.600 0 0 1 16 5.400zm-4 5.300c-.3 0-.7.100-1 .5-.4.400-1.300 1.200-1.300 3s1.400 3.500 1.500 3.700c.2.200 2.600 4.100 6.400 5.600 3.200 1.200 3.800 1 4.500.9.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800l-.7-.4-2.400-1.200c-.3-.1-.6-.2-.8.200l-1.100 1.400c-.2.200-.4.300-.7.100-.4-.2-1.500-.6-2.800-1.700-1-.9-1.700-2-1.900-2.400-.2-.3 0-.5.200-.7l.5-.6c.2-.2.200-.4.400-.6.100-.3.100-.5 0-.7l-1.100-2.600c-.3-.7-.6-.6-.8-.6z"/></svg>
+</a>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
